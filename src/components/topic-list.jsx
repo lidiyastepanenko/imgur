@@ -24,13 +24,14 @@ module.exports = React.createClass({
   },
   renderTopics: function() {
     return this.state.topics.map(function(topic){
-      return <Link to={"topics/" + topic.id} className="list-group-item" key={topic.id}>
-        <h4>{topic.name}</h4>
+      return <Link to={"topics/" + topic.id} className="col-sm-6 col-md-4" key={topic.id}>
+        <h2>{topic.name}</h2>
+
+         <p>{topic.description}</p>
         {
-          topic.heroImage && <img height='200' src={topic.heroImage.link} alt="" />
+          topic.heroImage && <img width='150' height='100' src={topic.heroImage.link} alt="" />
         }
-        <p>{topic.description}</p>
-      </Link>
+        </Link>     
     });
   },
   onChange: function(event, topics) {

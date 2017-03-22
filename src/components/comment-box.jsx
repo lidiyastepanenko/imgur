@@ -10,7 +10,7 @@ module.exports = React.createClass({
     return this.props.comments.map(function(comment){
       return <li className="list-group-item comment-box" key={comment.id}>
         <span className="badge">{comment.ups}</span>
-        <h5>{comment.author}</h5>
+        <h4>{comment.author}:</h4>
         {comment.comment}
       </li>
     })

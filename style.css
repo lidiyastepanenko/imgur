@@ -6,7 +6,6 @@
   background-color: #FFCC33; }
 
 .image-detail .panel-body {
-  background-color: #CCFFFF;
   text-align: center; }
 
 .image-detail img, .image-detail video {
@@ -32,10 +31,12 @@
     opacity: .5;
     color: white; }
   .image-preview img {
+    margin: 10px;
     height: 200px;
     width: 200px;
     display: inline-block; }
   .image-preview video {
+    margin: 10px;
     height: 200px;
     width: 200px;
     vertical-align: middle;
